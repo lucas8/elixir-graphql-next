@@ -9,6 +9,7 @@
                         'Elixir.GqlElixir.DataCase','Elixir.GqlElixir.Repo',
                         'Elixir.GqlElixir.Todo','Elixir.GqlElixir.Todo.Item',
                         'Elixir.GqlElixirWeb',
+                        'Elixir.GqlElixirWeb.AbsintheSocket',
                         'Elixir.GqlElixirWeb.ChannelCase',
                         'Elixir.GqlElixirWeb.ConnCase',
                         'Elixir.GqlElixirWeb.Endpoint',
@@ -18,8 +19,8 @@
                         'Elixir.GqlElixirWeb.Resolvers.TodoResolver',
                         'Elixir.GqlElixirWeb.Router',
                         'Elixir.GqlElixirWeb.Router.Helpers',
-                        'Elixir.GqlElixirWeb.Schema.TodoTypes',
-                        'Elixir.GqlElixirWeb.UserSocket']},
+                        'Elixir.GqlElixirWeb.Schema',
+                        'Elixir.GqlElixirWeb.Schema.TodoTypes']},
               {registered,[]},
               {vsn,"0.1.0"},
               {mod,{'Elixir.GqlElixir.Application',[]}}]}.

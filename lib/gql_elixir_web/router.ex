@@ -5,7 +5,11 @@ defmodule GqlElixirWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", GqlElixirWeb do
+  scope "/" do
     pipe_through :api
+
+    forward "/graphql", Absinthe.Plug.GraphiQL, schema: GqlElixirWeb.Schema, interface: :playground
+
+    forward "/", Absinthe.Plug, schema: GqlElixirWeb.Schema
   end
 end

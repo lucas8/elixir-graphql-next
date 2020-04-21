@@ -6,6 +6,7 @@ defmodule GqlElixirWeb.Resolvers.TodoResolver do
   end
 
   def create_item(_parent, args, _resolutions) do
+    IO.puts("YOOOO")
     args
     |> Todo.create_item()
     |> case do

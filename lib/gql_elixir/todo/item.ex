@@ -3,7 +3,7 @@ defmodule GqlElixir.Todo.Item do
   import Ecto.Changeset
 
   schema "items" do
-    field :checked, :string
+    field :checked, :boolean
     field :title, :string
 
     timestamps()
@@ -13,6 +13,6 @@ defmodule GqlElixir.Todo.Item do
   def changeset(item, attrs) do
     item
     |> cast(attrs, [:title, :checked])
-    |> validate_required([:title, :checked])
+    |> validate_required([:title])
   end
 end

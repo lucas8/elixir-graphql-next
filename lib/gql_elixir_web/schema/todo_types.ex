@@ -26,4 +26,10 @@ defmodule GqlElixirWeb.Schema.TodoTypes do
       resolve(&Resolvers.TodoResolver.create_item/3)
     end
   end
+
+  object :item_subscriptions do
+    field :item_created, :item do
+
+    end
+  end
 end
