@@ -27,4 +27,8 @@ gql_elixir-*.tar
 # this depending on your deployment strategy.
 /priv/static/
 
-./.elixir_ls
+/.elixir_ls
+
+/client/.next
+/client/node_modules
+/client/__generated__
